@@ -9,15 +9,15 @@ import {
 } from "@/components/ui/accordion";
 import { PurchaseNotifications } from "@/components/PurchaseNotifications";
 
-import d1 from "@/assets/Depoimento_1.jpg.asset.json";
-import d2 from "@/assets/Depoimento_2.jpg.asset.json";
-import d3 from "@/assets/Depoimento_3.jpg.asset.json";
-import d4 from "@/assets/Depoimento_4.jpg.asset.json";
-import d5 from "@/assets/Depoimento_5.jpg.asset.json";
-import d6 from "@/assets/Depoimento_6.jpg.asset.json";
-import d7 from "@/assets/Depoimento_7.jpg.asset.json";
-import d8 from "@/assets/Depoimento_8.jpg.asset.json";
-import d9 from "@/assets/Depoimento_9.jpg.asset.json";
+import depo1 from "../assets/depo1.jpg";
+import depo2 from "../assets/depo2.jpg";
+import depo3 from "../assets/depo3.jpg";
+import depo4 from "../assets/depo4.jpg";
+import depo5 from "../assets/depo5.jpg";
+import depo6 from "../assets/depo6.jpg";
+import depo7 from "../assets/depo7.jpg";
+import depo8 from "../assets/depo8.jpg";
+import depo9 from "../assets/depo9.jpg";
 
 
 
@@ -129,7 +129,7 @@ const faqs = [
   },
 ];
 
-const depoimentos = [d1, d2, d3, d4, d5, d6, d7, d8, d9];
+const depoimentos = [depo1, depo2, depo3, depo4, depo5, depo6, depo7, depo8, depo9];
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
@@ -345,8 +345,8 @@ function Index() {
             <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {depoimentos.map((depoimento, i) => (
                 <img
-                  key={depoimento.url}
-                  src={depoimento.url}
+                  key={depoimento}
+                  src={depoimento}
                   loading="lazy"
                   className="w-full rounded-xl border border-border shadow-card"
                   alt={`Depoimento real de aluno do curso no WhatsApp ${i + 1}`}
